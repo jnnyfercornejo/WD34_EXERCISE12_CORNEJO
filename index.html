@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Collection Series_Infinity War</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+<style>
+	body, html{
+		margin: 0;
+		background-image: url("img/bg.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: static;
+	}
+	.logo{
+		width: 210px;
+		height: auto;
+	}
+	.navbar{
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+	}
+	.navbar-nav{
+		font-family: 'Montserrat', sans-serif;
+		text-decoration: none;
+	}
+	.nav-link{
+		color: goldenrod;
+	}
+	.fa-solid, .fa-brands{
+		width: 100px;
+	}
+	#marvel{
+		z-index: 1;
+	}
+	#signUp{
+		z-index: 2;
+	}
+	.signUp{
+		text-decoration: none;
+		color: goldenrod;
+	}
+	.trailer{
+		text-decoration: none;
+		color: black;
+	}
+	#collection{
+		padding: 5px;
+	}
+	#stones{
+		margin-top: 110px;
+		backdrop-filter: blur(10px);
+	}
+	.card-body{
+		backdrop-filter: blur(10px);
+	}
+	.cardHeader{
+		font-family: 'Lato', sans-serif;
+		color: rgb(255, 199, 58);
+		font-weight: 900;
+	}
+	#power{
+		background: rgb(84, 8, 146);
+		color: rgb(255, 255, 255);
+		font-family: 'Montserrat', sans-serif;
+	}
+	#time{
+		background: rgb(8, 146, 43);
+		color: rgb(255, 255, 255);
+		font-family: 'Montserrat', sans-serif;
+	}
+	#space{
+		background: rgb(8, 68, 146);
+		color: rgb(255, 255, 255);
+		font-family: 'Montserrat', sans-serif;
+	}
+	#reality{
+		background: rgb(146, 8, 8);
+		color: rgb(255, 255, 255);
+		font-family: 'Montserrat', sans-serif;
+	}
+	#soul{
+		background: rgb(187, 67, 11);
+		color: rgb(255, 255, 255);
+		font-family: 'Montserrat', sans-serif;
+	}
+	#mind{
+		background: rgb(160, 136, 0);
+		color: rgb(255, 255, 255);
+		font-family: 'Montserrat', sans-serif;
+	}
+	footer{
+		background-color: rgba(0, 0, 0, 0);
+		backdrop-filter: blur(10px);
+		max-width: 100%;
+		height: 100px;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+		<div class="container-fluid">
+		<a href="index.html" class="navbar-brand"><img src="img/logo.png" class="logo"></a>
+		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#theMenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse ps-4" id="theMenu">
+		
+				<ul class="navbar-nav ms-auto me-5">
+					<li class="nav-item me-5">
+						<a href="#stones" class="nav-link">
+							<i class="fa-solid fa-gem" data-bs-toggle="tooltip" data-bs-placement="top" title="Infintity Stones"></i>
+						</a>
+					</li>
+					<li class="nav-item me-5">
+						<a href="cast.html" class="nav-link">
+							<i class="fa-solid fa-mask" data-bs-toggle="tooltip" data-bs-placement="top" title="Infinity War"></i>
+						</a>
+					</li>
+					<li class="nav-item me-5">
+						<a href="clips.html" class="nav-link">
+							<i class="fa-solid fa-film" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie Clips"></i>
+						</a>
+					</li>
+
+					<button class="btn btn-outline-warning me-5">
+						<a href="signup.html" class="signUp">Sign Up</a>
+					</button>
+
+
+					<li class="nav-item dropdown me-5">
+						<a href="#" class="nav-link dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown" >
+							Infinity Collections
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="#dropdownMenu" >
+							<li>
+								<a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Infinity_War/Gallery#Screenshots" class="dropdown-item" id="collection">
+									 Gallery
+								</a>
+							</li>
+							<li>
+								<a href="" class="dropdown-item">
+									<a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" class="trailer" id="collection">Infinity War Trailer</a>
+								</a>
+							</li>
+						</ul>
+					</li>
+				 </ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="row">
+		<div class="col-12">
+			<video src="img/marvelintro.mp4" class="w-100 rounded" id="marvel" autoplay loop muted></video>
+		</div>
+	</div>
+
+<div class="row g-5 ms-5" id="stones">
+	<h1 class="cardHeader text-center">INFINITY STONES</h1>
+	<div class="col-xl-4 text-center">
+		<div class="card ">
+			<img src="img/powerstone.gif" class="img-card-top">
+			<div class="card-body" id="power">
+				<h3 class="card-title  text-warning">Power Stone</h3>
+				<h6 class="card-subtitle mt-1">Creator:
+					Big Bang
+				</h6>
+				<p class="card-text mt-2">The Power Stone was one of the six Infinity Stones, the remnant of a singularity that predated the universe, representing the element of power. It was used by the Celestial Eson the Searcher until it was contained within the Orb and hidden for millennia on Morag.
+				</p>
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Power_Stone" class="btn btn-outline-warning">Read More
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xl-4 text-center border border-5 p-2 ">
+		<div class="card">
+			<img src="img/timestone.gif" class="img-card-top">
+			<div class="card-body" id="time">
+				<h3 class="card-title text-warning">Time Stone</h3>
+				<h6 class="card-subtitle mt-1">Creator:
+					Big Bang
+				</h6>
+				<p class="card-text mt-2">The Mind Stone was contained inside the Eye of Agamotto and placed under the protection of the Masters of the Mystic Arts. In 2017, Doctor Strange took possession of the Stone. The master sorcerer Agamotto fashioned a containment device to better wield its dangerous power.
+				</p>
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Time_Stone" class="btn btn-outline-warning">Read More
+				</a>
+	
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xl-4 text-center border border-5 p-2">
+		<div class="card">
+			<img src="img/spacestone.gif" class="img-card-top">
+			<div class="card-body" id="space">
+				<h3 class="card-title text-warning">Space Stone</h3>
+				<h6 class="card-subtitle mt-1"> Creator: Big Bang
+				</h6>
+				<p class="card-text mt-2">Housed within the Tesseract, over the course of history it was wielded by many individuals, including Johann Schmidt of HYDRA, Mar-Vell of the Kree Empire, the Skrulls, and Loki of Asgard. During the Infinity War, the Tesseract was shattered by Thanos, who put the Space Stone inside his Infinity Gauntlet.
+				</p>
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Space_Stone" class="btn btn-outline-warning">Read More
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row p-5" id="stones">
+	<div class="col-xl-4 text-center border border-5 p-2">
+		<div class="card">
+			<img src="img/realitystone.gif" class="img-card-top">
+			<div class="card-body" id="reality">
+				<h3 class="card-title text-warning">Reality Stone</h3>
+				<h6 class="card-subtitle mt-1">Aether
+				</h6>
+				<p class="card-text mt-2">During the Infinity War, the Aether was retrieved from the Collector's Museum in Knowhere and solidified by the Mad Titan Thanos, who put the Stone inside his Infinity Gauntlet and used it in conjunction with the other five stones to eliminate half of all life in the universe. Following the Snap, Thanos destroyed all six stones to prevent it from being undone.
+				</p>
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Reality_Stone" class="btn btn-outline-warning">Read More
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xl-4 text-center border border-5 p-2">
+		<div class="card">
+			<img src="img/soulstone.gif" class="img-card-top">
+			<div class="card-body" id="soul">
+				<h3 class="card-title text-warning">Soul Stone</h3>
+				<h6 class="card-subtitle mt-1">Creator: Big Bang
+				</h6>
+
+				</h4>
+				<p class="card-text mt-2">Representing the element of soul. Even those who were well versed in the powers, and even locations, of the other five Stones, had little concrete knowledge regarding the Soul Stone to the point of only knowing its name. Kept on Vormir and under the protection of Red Skull since 1945, the Soul Stone was acquired by Thanos in 2018 after he sacrificed Gamora.
+				</p>
+				<br>
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Soul_Stone" class="btn btn-outline-warning">Read More
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xl-4 text-center border border-5 p-2">
+		<div class="card">
+			<img src="img/mindstone.gif" class="img-card-top">
+			<div class="card-body" id="mind">
+				<h3 class="card-title text-warning">Mind Stone</h3>
+				<h6 class="card-subtitle mt-1">Vision's Stone
+				</h6>
+				<p class="card-text mt-2">The Mind Stone is a remnant of one of the six singularities which existed before the universe. The Mind Stone was originally portrayed as a power source for the Scepter. After unspecified experimentation with the Mind Stone, Maximoff gained telekinetic and telepathic abilities.  It remained with Vision until it was forcibly removed by Thanos following the Battle of Wakanda, killing Vision in the process.
+				</p>
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Mind_Stone" class="btn btn-outline-warning">Read More</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<footer class="text-center text-white" style="background-color: #000000;" >
+
+	<div class="container pt-4">
+
+	  <section class="mb-4">
+
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-facebook-f"></i
+		></a>
+  
+
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-twitter"></i
+		></a>
+  
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-google"></i
+		></a>
+  
+	
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-instagram"></i
+		></a>
+  
+	
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-linkedin"></i
+		></a>
+	
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-github"></i
+		></a>
+	  </section>
+
+	</div>
+
+	<div class="text-center text-warning p-3" style="background-color: rgb(161, 0, 0);">
+	  © 2022 Copyright:
+	  <a class="text-warning" href="https://mdbootstrap.com/">Jennyfer Cornejo Website Development</a>
+	</div>
+
+  </footer>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+ 	return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+	</script>
+</html>

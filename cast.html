@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Collection Series_Characters</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+<style>
+	body, html{
+		margin: 0;
+		background-image: url("img/bg.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: static;
+	}
+	.logo{
+		width: 210px;
+		height: auto;
+	}
+	.navbar{
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+	}
+	.navbar-nav{
+		font-family: 'Montserrat', sans-serif;
+		text-decoration: none;
+	}
+	.nav-link{
+		color: goldenrod;
+	}
+	.fa-solid, .fa-brands{
+		width: 100px;
+	}
+	#signUp{
+		z-index: 2;
+	}
+	.signUp{
+		text-decoration: none;
+		color: goldenrod;
+	}
+	.trailer{
+		text-decoration: none;
+		color: black;
+	}
+	#collection{
+		padding: 5px;
+	}
+	#heroImg1{
+		background-image: url("img/cap.jpg");
+		background-size: cover;
+	}
+	#heroImg2{
+		background-image: url("img/iron-man.jpg");
+		background-size: cover;
+	}
+	#heroImg3{
+		background-image: url("img/thor.jpg");
+		background-size: cover;
+	}
+	#heroImg4{
+		background-image: url("img/strange.jpg");
+		background-size: cover;
+	}
+	#heroImg5{
+		background-image: url("img/spiderman.jpg");
+		background-size: cover;
+	}
+	#heroImg6{
+		background-image: url("img/panther.jpg");
+		background-size: cover;
+	}
+	#heroImg7{
+		background-image: url("img/wanda.jpg");
+		background-size: cover;
+	}
+	#heroImg8{
+		background-image: url("img/blackwidow.jpg");
+		background-size: cover;
+	}
+	#heroImg9{
+		background-image: url("img/hulk.jpg");
+		background-size: cover;
+	}
+	#heroImg10{
+		background-image: url("img/clint.jpg");
+		background-size: cover;
+	}
+	#heroImg11{
+		background-image: url("img/vision.jpg");
+		background-size: cover;
+	}
+	#heroImg12{
+		background-image: url("img/thanos.jpg");
+		background-size: cover;
+	}
+	.cardHeader{
+		font-family: 'Lato', sans-serif;
+		color: rgb(214, 0, 0);
+		font-weight: 900;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.card-title{
+		font-weight: 900;
+		color: yellow;
+	}
+	#overlayText{
+		padding: 30px;
+		font-family: 'Lato', sans-serif;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: justify;
+	}
+	#textpadding{
+		width:250px;
+		margin: 200px 20px 0px 0px;
+		font-weight: 900;
+		color: goldenrod;
+		background-color: rgb(4, 2, 145);
+		text-align: center;
+	
+	}
+	.buttonModal{
+		padding: 20px;
+	}
+	#btnModal{
+		width: 287px;
+		margin: 0px 30px 3px 3px;
+	}
+	#btnModal4{
+		width: 287px;
+		margin: 0px 3px 3px 3px;
+	}
+	.card-img-overlay{
+		padding: 30px;
+		margin: 50px;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+		<div class="container-fluid">
+		<a href="index.html" class="navbar-brand"><img src="img/logo.png" class="logo"></a>
+		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#theMenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="theMenu">
+			<!--  
+			<div class="navbar-nav">
+				<a href="#" class="nav-link active">
+					<i class="fa-solid fa-gem"></i>
+				</a>
+				<a href="#" class="nav-link ">
+					About
+				</a>
+				<a href="#" class="nav-link">
+					Contact Us
+				</a>
+				-->
+				<ul class="navbar-nav ms-auto me-5">
+					<li class="nav-item me-5">
+						<a href="index.html#stones" class="nav-link">
+							<i class="fa-solid fa-gem" data-bs-toggle="tooltip" data-bs-placement="top" title="Infintity Stones"></i>
+						</a>
+					</li>
+					<li class="nav-item me-5">
+						<a href="#cast.html" class="nav-link">
+							<i class="fa-solid fa-mask" data-bs-toggle="tooltip" data-bs-placement="top" title="Infinity War"></i>
+						</a>
+					</li>
+					<li class="nav-item me-5">
+						<a href="clips.html" class="nav-link">
+							<i class="fa-solid fa-film" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie Clips"></i>
+						</a>
+					</li>
+
+					<button class="btn btn-outline-warning me-5">
+						<a href="signup.html" class="signUp">Sign Up</a>
+					</button>
+
+
+					<li class="nav-item dropdown me-5">
+						<a href="#" class="nav-link dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown">
+							Infinity Collections
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="#dropdownMenu">
+							<li>
+								<a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Infinity_War/Gallery#Screenshots" class="dropdown-item" id="collection">
+									 Gallery
+								</a>
+							</li>
+							<li>
+								<a href="" class="dropdown-item">
+									<a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" class="trailer" id="collection">Movie Trailer</a>
+								</a>
+							</li>
+						</ul>
+					</li>
+				 </ul>
+			</div>
+		</div>
+	</nav>
+
+<h1 class="cardHeader text-center">INFINITY WAR CHARACTERS</h1>
+<div class="container d-flex flex-wrap">
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg1">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">CAPTAIN AMERICA</h5>
+		  <p class="card-text" id="textpadding">Steve Rogers</p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg2">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">IRON MAN</h5>
+		  <p class="card-text"  id="textpadding">Tony Stark</p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg3">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">THOR</h5>
+		  <p class="card-text"  id="textpadding">Thor Odinson</p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg4">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">DOCTOR STRANGE</h5>
+		  <p class="card-text"  id="textpadding">Stephen Strange</p>
+		</div>
+	</div>
+</div>
+
+<div class="container g-5 d-flex flex-wrap">
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#capModal">Captain America</button>
+	
+	<div class="modal fade" id="capModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">CAPTAIN AMERICA</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/captain.jpg" class="imageCap w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Steve Rogers</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_America_(Fiction)" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#ironmanModal">Iron Man</button>
+
+
+	<div class="modal fade" id="ironmanModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">IRON MAN</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/ironman.jpg" class="imageIron w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Tony Stark</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_America_(Fiction)" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#thorModal">Thor</button>
+
+
+	<div class="modal fade" id="thorModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">THOR- GOD OF THUNDER</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/thor-god.jpg" class="imageThor w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Thor Odinson</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_America_(Fiction)" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal4" data-bs-toggle="modal" data-bs-target="#strangeModal">Doctor Strange</button>
+
+
+	<div class="modal fade" id="strangeModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">DOCTOR STRANGE</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/dr-strange.jpg" class="imageStrange w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Dr. Stephen Strange</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Captain_America_(Fiction)" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+</div>
+
+<div class="container d-flex flex-wrap">
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg5">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">SPIDERMAN</h5>
+		  <p class="card-text" id="textpadding">Peter Parkers</p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg6">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">BLACK PANTHER</h5>
+		  <p class="card-text"  id="textpadding">King T'Challa</p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg7">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">SCARLET WITCH</h5>
+		  <p class="card-text"  id="textpadding">Wanda Maximoff
+		  </p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg8">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">BLACK WIDOW</h5>
+		  <p class="card-text"  id="textpadding">Natasha Romanoff</p>
+		</div>
+	</div>
+</div>
+
+<div class="container g-5 d-flex flex-wrap">
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#spiderModal">Spiderman</button>
+	
+	<div class="modal fade" id="spiderModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">SPIDERMAN</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/spider-man.jpg" class="imageSpider w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Peter Parker</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Spider-Man" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#pantherModal">Black Panther</button>
+
+
+	<div class="modal fade" id="pantherModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">BLACK PANTHER</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/black-panther.jpg" class="imagePanther w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">King T'Challa</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/T%27Challa" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#wandaModal">Scarlett Witch</button>
+
+
+	<div class="modal fade" id="wandaModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">SCARLET WITCH</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/scarletwitch.jpg" class="imageWitch w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Wanda Maximoff</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Scarlet_Witch" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal4" data-bs-toggle="modal" data-bs-target="#widowModal">Black Widow</button>
+
+
+	<div class="modal fade" id="widowModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">BLACK WIDOW</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/black-widow.jpg" class="imageWidow w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Natasha Romanoff</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Black_Widow" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+</div>
+
+<div class="container d-flex flex-wrap">
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg9">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">HULK</h5>
+		  <p class="card-text" id="textpadding">Bruce Banner</p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg10">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">HAWKEYE</h5>
+		  <p class="card-text"  id="textpadding">Clint Barton</p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg11">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">VISION</h5>
+		  <p class="card-text"  id="textpadding">Vision/Jarvis/Ultron/Mind Stone</p>
+		</div>
+	</div>
+
+	<div class="card border-primary m-3 g-3" style="max-width: 18rem;" id="heroImg12">
+		<div class="card-header"></div>
+		<div class="card-body text-primary">
+		  <h5 class="card-title">THANOS</h5>
+		  <p class="card-text"  id="textpadding">Thanos</p>
+		</div>
+	</div>
+</div>
+
+<div class="container g-5 d-flex flex-wrap">
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#hulkModal">Hulk</button>
+	
+	<div class="modal fade" id="hulkModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">HULK</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/hulk-banner.jpg" class="imageHulk w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Bruce Banner</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Hulk" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#hawkeyeModal">Hawkeye</button>
+
+
+	<div class="modal fade" id="hawkeyeModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">HAWKEYE</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/hawkeye.jpg" class="imageHawkeye w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Clint Barton</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Hawkeye" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal" data-bs-toggle="modal" data-bs-target="#visionModal">Vision</button>
+
+
+	<div class="modal fade" id="visionModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">VISION</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/vis.jpg" class="imageVision w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Vision/Jarvis/Ultrom/Mind Stone</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Vision" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+
+	<button type="button" class="btn btn-outline-danger" id="btnModal4" data-bs-toggle="modal" data-bs-target="#thanosModal">Thanos</button>
+
+
+	<div class="modal fade" id="thanosModal">
+  	<div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h3 class="modal-title">THANOS</h3>
+		</div>	
+		<div class="modal-body">
+			<img src="img/thanos1.jpg" class="imageThanos w-100">
+			<div class="card-img-overlay w-50">
+				<h3 class="card-title">Thanos</h3>
+				<p class="card-text" id="overlayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dignissimos placeat numquam ipsum. Totam eligendi, eos modi deserunt aut quasi impedit pariatur iste quod! Ullam eum quaerat asperiores nostrum veritatis?
+				Dolorem delectus vel odit, doloremque eaque accusamus asperiores reiciendis iusto quibusdam illo perferendis optio quo. Neque tempore rem, quos optio, cupiditate nihil ipsam iure nulla perspiciatis eligendi assumenda beatae nemo.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-outline-danger">
+				<a href="https://marvelcinematicuniverse.fandom.com/wiki/Thanos)" class=""><i class="fa-brands fa-readme"></i></a>
+			</button>
+			<button class="btn btn-secondary" data-bs-dismiss="modal">
+				<i class="fa-solid fa-rectangle-xmark"></i>
+			</button>
+		</div>
+    </div>
+  	</div>
+	</div>
+</div>
+
+<footer class="text-center text-white" style="background-color: #000000;" >
+
+	<div class="container pt-4">
+
+	  <section class="mb-4">
+
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-facebook-f"></i
+		></a>
+  
+
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-twitter"></i
+		></a>
+  
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-google"></i
+		></a>
+  
+	
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-instagram"></i
+		></a>
+  
+	
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-linkedin"></i
+		></a>
+	
+		<a
+		  class="btn btn-link btn-floating btn-lg text-warning m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="warning"
+		  ><i class="fab fa-github"></i
+		></a>
+	  </section>
+
+	</div>
+
+	<div class="text-center text-warning p-3" style="background-color: rgb(161, 0, 0);">
+	  © 2022 Copyright:
+	  <a class="text-warning" href="https://mdbootstrap.com/">Jennyfer Cornejo Website Development</a>
+	</div>
+
+  </footer>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script>
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+ 	return new bootstrap.Tooltip(tooltipTriggerEl)
+	})
+	</script>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Collection Series_Infinity War</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+<style>
+	body, html{
+		margin: 0;
+		background-image: url("img/bg.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: static;
+	}
+	.logo{
+		width: 210px;
+		height: auto;
+	}
+	.navbar{
+		background-color: transparent;
+		backdrop-filter: blur(10px);
+	}
+	.navbar-nav{
+		font-family: 'Montserrat', sans-serif;
+		text-decoration: none;
+	}
+	.nav-link{
+		color: goldenrod;
+	}
+	.fa-solid, .fa-brands{
+		width: 100px;
+	}
+	#marvel{
+		z-index: 1;
+	}
+	#signUp{
+		z-index: 2;
+	}
+	.signUp{
+		text-decoration: none;
+		color: goldenrod;
+	}
+	#collection{
+		padding: 5px;
+	}
+	.trailer{
+		text-decoration: none;
+		color: black;
+	}
+	footer{
+		background-color: rgba(0, 0, 0, 0);
+		backdrop-filter: blur(10px);
+		max-width: 100%;
+		height: 100px;
+	}
+	#clipsbottom{
+		margin-bottom: 110px;
+	}
+
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+		<div class="container-fluid">
+		<a href="index.html" class="navbar-brand"><img src="img/logo.png" class="logo"></a>
+		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#theMenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="theMenu">
+			<!--  
+			<div class="navbar-nav">
+				<a href="#" class="nav-link active">
+					<i class="fa-solid fa-gem"></i>
+				</a>
+				<a href="#" class="nav-link ">
+					About
+				</a>
+				<a href="#" class="nav-link">
+					Contact Us
+				</a>
+				-->
+				<ul class="navbar-nav ms-auto me-5">
+					<li class="nav-item me-5">
+						<a href="index.html#stones" class="nav-link">
+							<i class="fa-solid fa-gem" data-bs-toggle="tooltip" data-bs-placement="top" title="Infintity Stones"></i>
+						</a>
+					</li>
+					<li class="nav-item me-5">
+						<a href="cast.html" class="nav-link">
+							<i class="fa-solid fa-mask" data-bs-toggle="tooltip" data-bs-placement="top" title="Infinity War"></i>
+						</a>
+					</li>
+					<li class="nav-item me-5">
+						<a href="#clips.html" class="nav-link">
+							<i class="fa-solid fa-film" data-bs-toggle="tooltip" data-bs-placement="top" title="Movie Clips"></i>
+						</a>
+					</li>
+
+					<button class="btn btn-outline-warning me-5">
+						<a href="signup.html" class="signUp">Sign Up</a>
+					</button>
+
+
+					<li class="nav-item dropdown me-5">
+						<a href="#" class="nav-link dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown">
+							Infinity Collections
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="#dropdownMenu">
+							<li>
+								<a href="https://marvelcinematicuniverse.fandom.com/wiki/Avengers:_Infinity_War/Gallery#Screenshots" id="collection">
+									 Gallery</a>
+							</li>
+							<li>
+								<a href="" class="dropdown-item">
+									<a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" class="trailer" id="collection">Movie Trailer</a>
+								</a>
+							</li>
+						</ul>
+					</li>
+				 </ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container mt-5" id="clipsbottom">
+		<div class="carousel slide" data-bs-ride="carousel" id="controlMeCarousel">
+			<div class="carousel-indicators">
+				<button data-bs-target="#controlMeCarousel" data-bs-slide-to="0" class="active"></button>
+				<button data-bs-target="#controlMeCarousel" data-bs-slide-to="1"></button>
+				<button data-bs-target="#controlMeCarousel" data-bs-slide-to="2"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<video autoplay controls="controls" >
+						<source type="video/mp4" src="img/marvelintro.mp4">
+					   </video>
+				</div>
+				<div class="carousel-item">
+					<video controls="controls" >
+						<source type="video/mp4" src="img/marvelintro.mp4">
+					   </video>
+				</div>
+				<div class="carousel-item">
+					<video controls="controls" >
+						<source type="video/mp4" src="img/marvelintro.mp4">
+					   </video>
+				</div>
+			</div>
+			<button class="carousel-control-prev" data-bs-target="#controlMeCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" data-bs-target="#controlMeCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
+	</div>
+
+	<footer class="text-center text-white" style="background-color: #000000;" >
+
+		<div class="container pt-4">
+	
+		  <section class="mb-4">
+	
+			<a
+			  class="btn btn-link btn-floating btn-lg text-warning m-1"
+			  href="#!"
+			  role="button"
+			  data-mdb-ripple-color="warning"
+			  ><i class="fab fa-facebook-f"></i
+			></a>
+	  
+	
+			<a
+			  class="btn btn-link btn-floating btn-lg text-warning m-1"
+			  href="#!"
+			  role="button"
+			  data-mdb-ripple-color="warning"
+			  ><i class="fab fa-twitter"></i
+			></a>
+	  
+			<a
+			  class="btn btn-link btn-floating btn-lg text-warning m-1"
+			  href="#!"
+			  role="button"
+			  data-mdb-ripple-color="warning"
+			  ><i class="fab fa-google"></i
+			></a>
+	  
+		
+			<a
+			  class="btn btn-link btn-floating btn-lg text-warning m-1"
+			  href="#!"
+			  role="button"
+			  data-mdb-ripple-color="warning"
+			  ><i class="fab fa-instagram"></i
+			></a>
+	  
+		
+			<a
+			  class="btn btn-link btn-floating btn-lg text-warning m-1"
+			  href="#!"
+			  role="button"
+			  data-mdb-ripple-color="warning"
+			  ><i class="fab fa-linkedin"></i
+			></a>
+		
+			<a
+			  class="btn btn-link btn-floating btn-lg text-warning m-1"
+			  href="#!"
+			  role="button"
+			  data-mdb-ripple-color="warning"
+			  ><i class="fab fa-github"></i
+			></a>
+		  </section>
+	
+		</div>
+	
+		<div class="text-center text-warning p-3" style="background-color: rgb(161, 0, 0);">
+		  © 2022 Copyright:
+		  <a class="text-warning" href="https://mdbootstrap.com/">Jennyfer Cornejo Website Development</a>
+		</div>
+	
+	  </footer>
+	</body>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script>
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		 return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+		</script>
+	</html>
